@@ -1,0 +1,15 @@
+{
+  "luci-app-cams": {
+    "description": "Webcam settings",
+    "read": {
+      "uci": [ "cams" ],
+      "file": {
+        "/usr/sbin/cams-list": [ "exec" ],
+        "/etc/init.d/cams": [ "exec" ]
+      }
+    },
+    "write": {
+      "uci": [ "cams" ]
+    }
+  }
+}
